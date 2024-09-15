@@ -69,7 +69,7 @@ The application is structured into three main components, each containerized for
 
 1. **Clone the repository:**
    ```bash
-   git clone git@github.com:CodecoolGlobal/freestyle-mern-project-2-react-zsbrigi.git
+   git clone https://github.com/mrgitics/dockerized-mern-recipe-app.git
 
 2. **Navigate to the project directory**
 
