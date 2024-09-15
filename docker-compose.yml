@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+    networks:
+      - webappnetwork
+
+  server:
+    build: ./server
+    ports:
+      - "5001:5001"
+    environment:
+      - URL=mongodb://defaultUser:defaultPassword@db:27017/Recipes?authSource=admin&retryWrites=true&w=majority
+    depends_on:
+      - db
+    networks:
+      - webappnetwork
+
+  db:
+    image: mongo:latest
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=defaultUser
+      - MONGO_INITDB_ROOT_PASSWORD=defaultPassword
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - webappnetwork
+
+networks:
+  webappnetwork:
+    driver: bridge
+
+volumes:
+  mongo-data:
