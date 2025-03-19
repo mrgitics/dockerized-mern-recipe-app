@@ -25,12 +25,15 @@ This project was developed as part of my **DevOps specialization**, where I focu
   - ![Fridge](./readme_images/fff_whats_in_my_fridge.png)
 
 ## Technologies Used
-- **Backend:** Node.js, Express.js
-- **Frontend:** React
-- **Database:** MongoDB
-- **Libraries:** Mongoose (for MongoDB), React Router (for routing)
-- **Containerization:** Docker, Docker Compose
-- **Web Server:** Nginx (for serving the React app)
+- [![Nginx][Nginx]](https://nginx.org/) - A web server for serving the React frontend.
+- [![React][React.js]](https://reactjs.org/) - A JavaScript library for building the frontend.
+- [![React Router][React-Router]](https://reactrouter.com/) - A routing library for React.
+- [![Node.js][Node.js]](https://nodejs.org/) - A JavaScript runtime for the backend.
+- [![Express.js][Express.js]](https://expressjs.com/) - A web framework for Node.js.
+- [![Mongoose][Mongoose]](https://mongoosejs.com/) - An ODM library for MongoDB and Node.js.
+- [![MongoDB][MongoDB]](https://www.mongodb.com/) - A NoSQL database for storing recipes and user data.
+- [![Docker][Docker]](https://www.docker.com/) - A platform for containerizing the application.
+- [![Docker Compose][Docker-Compose]](https://docs.docker.com/compose/) - A tool for defining and running multi-container Docker applications.
 
 ## Containerization and Nginx Setup
 This project is fully containerized using Docker. The Docker setup includes:
@@ -103,5 +106,14 @@ The application is structured into three main components, each containerized for
 - This setup is ready for deployment. By utilizing Docker Compose, you can easily deploy the entire application stack on any machine with Docker installed. Nginx ensures the React    frontend is efficiently served, while the backend and MongoDB containers handle the business logic and data storage.
 
 
-
+<!-- MARKDOWN LINKS & IMAGES -->
+[Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[MongoDB]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[Mongoose]: https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logo=mongoose&logoColor=white
+[React-Router]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[Docker]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
+[Docker-Compose]: https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white
+[Nginx]: https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white
 
